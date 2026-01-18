@@ -25,7 +25,9 @@ These rules are set by the crDroid core team to ensure consistent standards acro
   * Download links
   * Source links
   * Device documentation
-* Installation instructions must be added to the [install_docs](https://github.com/crdroidandroid/install_docs) repository.
+* Installation instructions must be added to the [install_docs](https://github.com/chararomandroid/install_docs) repository.
+* Maintainers must be willing to provide an environment free from hatred, discrimination, drama, or crimes.
+  * If you'd like to report a maintainer's behavior, please open an issue here or join the [development group](https://t.me/bunnypaddev)
 
 ---
 
@@ -135,13 +137,13 @@ These rules are set by the crDroid core team to ensure consistent standards acro
 
 ### Software
 
-* Only production builds (`user` or `userdebug`) are allowed.
+* Only production builds (`user` or `userdebug`) are allowed, but `userdebug` is recommended.
 * Official builds may be:
 
   * Weekly
   * Monthly
   * Nightly
-    but must be released for every crDroid minor version update.
+    but must be released for every, if not every other, CharaROM minor version update.
 * SELinux:
 
   * Permissive allowed only during early bring-up and beta builds.
@@ -161,11 +163,4 @@ These rules are set by the crDroid core team to ensure consistent standards acro
 
 ## Version History
 
-* **1.0** – Initial release
-* **1.1** – Rule review and adjustments
-* **1.2** – Clarifications
-* **1.3** – Security hardening, source maintenance clarification, removed bundled GApps
-* **1.4** – Vendor inclusion cleanup and clarification
-* **1.5** – Defined `vendorsetup.sh` cloning rules
-* **1.6** – Installation instructions requirement
-* **1.7** – Rule review and adjustments
+* **1.0** – Initial release (Based on crDroid's rules and guidelines, with our additions. Thanks, crDroid Team!)

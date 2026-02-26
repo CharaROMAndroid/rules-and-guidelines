@@ -1,20 +1,20 @@
-# crDroid Android Official Requirements
+# CharaROM Android Official Requirements
 
-This repository defines the quality and maintenance requirements for all official crDroid device maintainers.
-These rules are set by the crDroid core team to ensure consistent standards across all devices, protect user data and deliver a stable user experience.
+This repository defines the quality and maintenance requirements for all official CharaROM device maintainers.
+These rules are set by the CharaROM core team to ensure consistent standards across all devices, protect user data and deliver a stable user experience.
 
 ---
 
 ## General rules
 
 * Maintainers must be proficient with source control tools such as **git** and **repo**.
-* All device-related sources must be published publicly under the crDroid Android GitHub organization, including:
+* All device-related sources must be published publicly under the CharaROM Android GitHub organization, including:
 
   * Common device trees (if applicable)
   * Device trees
   * Kernel sources
 * Providing a vendor repository is not mandatory due to potential proprietary or DMCA-related issues, but it is strongly recommended.
-* Device trees and device-specific sources must be cloned via `crdroid.dependencies`. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
+* Device trees and device-specific sources must be cloned via `chararom.dependencies`. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
 * All sources must be fully synced and pushed to GitHub before every official build release.
 * Device trees may be co-maintained, but only in the case when maintainers already part of crDroid.
 * Maintainers must test every build before release, preferably with external testers, to minimize user-facing issues.
@@ -25,7 +25,7 @@ These rules are set by the crDroid core team to ensure consistent standards acro
   * Download links
   * Source links
   * Device documentation
-* Installation instructions must be added to the [install_docs](https://github.com/chararomandroid/install_docs) repository.
+* Installation instructions must be added to the device repository for the time being. We will make our own installation_docs repository in the furture. It is advised to link the install docs from the upstream device tree source, if applicable.
 * Maintainers must be willing to provide an environment free from hatred, discrimination, drama, or crimes.
   * If you'd like to report a maintainer's behavior, please open an issue here or join the [development group](https://t.me/bunnypaddev)
 
@@ -47,7 +47,7 @@ These rules are set by the crDroid core team to ensure consistent standards acro
   * This naming is mandatory, except in the case below.
 * If existing hosted sources are incompatible, maintainers must create device-specific branches, e.g.:
 
-  * `16.0-guacamole`
+  * `16.0-dre`
 * Additional branches for testing or backup are allowed.
 * Original commit authorship must be preserved.
 * Commit messages must be descriptive and meaningful:
@@ -78,7 +78,7 @@ These rules are set by the crDroid core team to ensure consistent standards acro
 #### Camera
 
 * The default camera app (Aperture) must work.
-* Alternative camera apps (e.g. GCam) are allowed only if fully stable.
+* Alternative camera apps (e.g. OpenCamera) are allowed only if fully stable.
 
 #### USB
 
@@ -153,14 +153,13 @@ These rules are set by the crDroid core team to ensure consistent standards acro
 
   * Only the minimum required package is allowed.
   * No extra or non-essential apps.
-* No additional apps may be bundled by maintainers, except:
+* Unless granted permission before hand, no additional apps may be bundled by maintainers, except:
 
   * Stock ROM apps
-  * GCam
   * Dolby
 
 ---
 
 ## Version History
-
+* **1.1** - Revise some things, make it fit more in-line with CharaROM
 * **1.0** – Initial release (Based on crDroid's rules and guidelines, with our additions. Thanks, crDroid Team!)

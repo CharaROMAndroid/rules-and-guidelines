@@ -16,7 +16,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 * Providing a vendor repository is not mandatory due to potential proprietary or DMCA-related issues, but it is strongly recommended.
 * Device trees and device-specific sources must be cloned via `chararom.dependencies`. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
 * All sources must be fully synced and pushed to GitHub before every official build release.
-* Device trees may be co-maintained, but only in the case when maintainers already part of crDroid.
+* Device trees may be co-maintained, but only in the case when maintainers are already part of CharaROM, crDroid, or LineageOS.
 * Maintainers must test every build before release, preferably with external testers, to minimize user-facing issues.
 * If any quality requirement (see below) cannot be met, the maintainer must clearly justify the exception when applying for maintainer status.
 * An official forum thread (usually XDA) must be created using the official template and must include:
@@ -161,5 +161,6 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 ---
 
 ## Version History
+* **1.2** - Revise co-maintainership requirements
 * **1.1** - Revise some things, make it fit more in-line with CharaROM
 * **1.0** – Initial release (Based on crDroid's rules and guidelines, with our additions. Thanks, crDroid Team!)

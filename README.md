@@ -14,7 +14,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
   * Device trees
   * Kernel sources
 * Providing a vendor repository is not mandatory due to potential proprietary or DMCA-related issues, but it is strongly recommended.
-* Device trees and device-specific sources must be cloned via `chararom.dependencies`. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
+* Device trees and device-specific sources must be cloned via `chararom.dependencies` or via `local_manifests`. If done via `local_manifests`, the manifest .xml MUST be shared and uploaded to our [device manifests](https://github.com/CharaROMAndroid/device_manifests) repository. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
 * All sources must be fully synced and pushed to GitHub before every official build release.
 * Device trees may be co-maintained, but only in the case when maintainers are already part of CharaROM, crDroid, or LineageOS.
 * Maintainers must test every build before release, preferably with external testers, to minimize user-facing issues.
@@ -41,13 +41,13 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 ## Git Rules
 
 * Repositories must be kept clean, organized, and readable.
-* Release branches must be named after the Android version, for example:
+* Release branches must be named after the CharaROM codename version OR the Android version, for example:
 
-  * Android 16 → `16.0`
+  * Android 16 → `16.0` or `hershey`
   * This naming is mandatory, except in the case below.
 * If existing hosted sources are incompatible, maintainers must create device-specific branches, e.g.:
 
-  * `16.0-dre`
+  * `16.0-dre` or `hershey-dre`
 * Additional branches for testing or backup are allowed.
 * Original commit authorship must be preserved.
 * Commit messages must be descriptive and meaningful:
@@ -161,6 +161,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 ---
 
 ## Version History
+* **1.3** - Revise Device syncing requirements and naming schema
 * **1.2** - Revise co-maintainership requirements
 * **1.1** - Revise some things, make it fit more in-line with CharaROM
 * **1.0** – Initial release (Based on crDroid's rules and guidelines, with our additions. Thanks, crDroid Team!)

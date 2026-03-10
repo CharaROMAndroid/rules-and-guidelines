@@ -111,7 +111,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 * Internal and external storage (e.g. SD cards) must work.
 * Encryption is mandatory.
 
-### Battery
+#### Battery
 
 * Device must not be known for having an exploding battery
 * Charging must work properly within the ROM.

@@ -25,7 +25,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
   * Download links
   * Source links
   * Device documentation
-* Installation instructions must be added to the device repository for the time being. We will make our own installation_docs repository in the furture. It is advised to link the install docs from the upstream device tree source, if applicable.
+* Installation instructions must be added to the device repository for the time being. We will make our own installation_docs repository in the future. It is advised to link the install docs from the upstream device tree source, if applicable.
 * Maintainers must be willing to provide an environment free from hatred, discrimination, drama, or crimes.
   * If you'd like to report a maintainer's behavior, please open an issue here or join the [development group](https://t.me/bunnypaddev)
 
@@ -41,17 +41,16 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 ## Git Rules
 
 * Repositories must be kept clean, organized, and readable.
-* Release branches must be named after the CharaROM codename version OR the Android version, for example:
+* Release branches must be named after the CharaROM codename version, except for the main manifest repository, for example:
 
-  * Android 16 → `16.0` or `hershey`
+  * Android 16 -> `hershey`
   * This naming is mandatory, except in the case below.
 * If existing hosted sources are incompatible, maintainers must create device-specific branches, e.g.:
 
-  * `16.0-dre` or `hershey-dre`
+  * `hershey-dre`
 * Additional branches for testing or backup are allowed.
 * Original commit authorship must be preserved.
-* Commit messages must be descriptive and meaningful:
-* Commits must clearly explain what and why, especially reverts.
+* Commit messages must be descriptive and meaningful, meaning commits must clearly explain what and why, especially reverts.
 * Rebasing and force-pushing are allowed only if they do not disrupt other maintainers.
 
   * Never force-push shared branches without consulting all users.
@@ -60,6 +59,25 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
   * `mybranch-old`
   * `mybranch-YYYYMMDD`
 
+---
+## Code Usage & Attribution
+
+* Reusing open-source code is allowed and encouraged.
+* Original authorship must always be preserved.
+* Direct copying without attribution is not allowed.
+* If copying part of a file, the commit **must have a link back to the original file**. If the original file is later found to have been kanged, we will add the actual original file within code comments.
+
+---
+### Experimental Builds
+
+* All initial builds MUST be labeled as experimental until:
+  * The device boots reliably
+  * Core hardware (RIL, Wi-Fi, etc.) is confirmed working
+* Experimental builds may:
+  * Fail to boot
+  * Have broken core functionality
+  * Be unsuitable for daily use
+ 
 ---
 
 ## Build Quality Requirements
@@ -113,9 +131,19 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 
 #### Battery
 
-* Device must not be known for having an exploding battery
+* If the device includes a battery, its status must be properly detected within the ROM.
 * Charging must work properly within the ROM.
 
+#### Hardware Safety:
+
+* Device must not have known critical hardware safety issues.
+
+#### Stability definition:
+
+A build is considered stable only if:
+* It boots consistently
+* Core hardware functions without major issues
+* No critical crashes or system instability is present
 ---
 
 ### Kernel
@@ -132,11 +160,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 
 ### Vendor
 
-* Blobs may come from:
-
-  * Stock ROMs
-  * Other devices
-  * Leaked BSPs
+* Blobs must be obtained from publicly available or legally distributable sources.
 
 ---
 
@@ -166,6 +190,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 ---
 
 ## Version History
+* **1.5** - Improve clarity, add EXPERIMENTAL build requirement
 * **1.4** - Add Battery rule
 * **1.3** - Revise Device syncing requirements and naming schema
 * **1.2** - Revise co-maintainership requirements

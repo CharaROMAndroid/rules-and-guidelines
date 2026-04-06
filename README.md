@@ -67,7 +67,6 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 * Direct copying without attribution is not allowed.
 * If copying part of a file, the commit **must have a link back to the original file**. If the original file is later found to have been kanged, we will add the actual original file within code comments.
 
----
 #### Open-Source Tree Requirement
 
 * **All device trees, kernel sources, and related repositories must be published under a license that allows others to use, modify, and redistribute the code.**

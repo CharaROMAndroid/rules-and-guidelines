@@ -12,7 +12,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 
   * Common device trees (if applicable)
   * Device trees
-  * Kernel sources
+  * Kernel sources (GPL requirement)
 * Providing a vendor repository is not mandatory due to potential proprietary or DMCA-related issues, but it is strongly recommended.
 * Device trees and device-specific sources must be cloned via `chararom.dependencies` or via `local_manifests`. If done via `local_manifests`, the manifest .xml MUST be shared and uploaded to our [device manifests](https://github.com/CharaROMAndroid/device_manifests) repository. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
 * All sources must be fully synced and pushed to GitHub before every official build release.
@@ -66,6 +66,16 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 * Original authorship must always be preserved.
 * Direct copying without attribution is not allowed.
 * If copying part of a file, the commit **must have a link back to the original file**. If the original file is later found to have been kanged, we will add the actual original file within code comments.
+
+---
+#### Open-Source Tree Requirement
+
+* **All device trees, kernel sources, and related repositories must be published under a license that allows others to use, modify, and redistribute the code.**
+  * Acceptable licenses include, but are not limited to: **GPLv2, Apache 2.0, MIT, BSD, WTFPL**.
+  * Repositories without a license or with restrictive terms **are not considered valid CharaROM sources**.
+* Maintainers must ensure that their upstream or co-maintained trees comply with these licensing requirements.
+* Forks of other trees are allowed only if the original license permits redistribution and modification.
+* CharaROM reserves the right to refuse inclusion of any device or kernel tree that does not comply with proper open-source licensing.
 
 ---
 ### Experimental Builds
@@ -190,6 +200,7 @@ A build is considered stable only if:
 ---
 
 ## Version History
+* **1.6** – Added Open-Source Tree Requirement: all trees must allow redistribution and modification under proper OSS licenses.
 * **1.5** - Improve clarity, add EXPERIMENTAL build requirement
 * **1.4** - Add Battery rule
 * **1.3** - Revise Device syncing requirements and naming schema

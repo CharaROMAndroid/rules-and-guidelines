@@ -12,7 +12,7 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 
   * Common device trees (if applicable)
   * Device trees
-  * Kernel sources (GPL requirement)
+  * Kernel sources (GPL requirement) {Exception: GKI Devices. We pull unmodified GKI kernels from upstream sources. If you are using a modified GKI kernel, such as WildKernels, please link that in the device tree.}
 * Providing a vendor repository is not mandatory due to potential proprietary or DMCA-related issues, but it is strongly recommended.
 * Device trees and device-specific sources must be cloned via `chararom.dependencies` or via `local_manifests`. If done via `local_manifests`, the manifest .xml MUST be shared and uploaded to our [device manifests](https://github.com/CharaROMAndroid/device_manifests) repository. Any source alteration or cloning through `vendorsetup.sh` or other scripts is not allowed.
 * All sources must be fully synced and pushed to GitHub before every official build release.
@@ -199,6 +199,7 @@ A build is considered stable only if:
 ---
 
 ## Version History
+* **1.7** - Added GKI Kernel Exception
 * **1.6** – Added Open-Source Tree Requirement: all trees must allow redistribution and modification under proper OSS licenses.
 * **1.5** - Improve clarity, add EXPERIMENTAL build requirement
 * **1.4** - Add Battery rule

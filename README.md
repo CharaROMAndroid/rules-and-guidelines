@@ -164,7 +164,7 @@ A build is considered stable only if:
   * Audit may be disabled
 * Blocking system tweak apps (e.g. *L Speed*, *LKT*) is allowed.
 * Blocking user applications (e.g. games like *PUBG*) is not allowed.
-
+* Kernel must not pre-include rooting utilities, such as KernelSU, KernelSU Next, ReSukiSU, and the like. This hinders user choice on root utility and adds unnecessary complexity to the kernel.
 ---
 
 ### Vendor
@@ -199,6 +199,7 @@ A build is considered stable only if:
 ---
 
 ## Version History
+* **1.8** - Added kernel "root service" prohibition
 * **1.7** - Added GKI Kernel Exception
 * **1.6** – Added Open-Source Tree Requirement: all trees must allow redistribution and modification under proper OSS licenses.
 * **1.5** - Improve clarity, add EXPERIMENTAL build requirement

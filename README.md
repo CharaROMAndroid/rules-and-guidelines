@@ -31,6 +31,13 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 
 ---
 
+## Blacklisted Entities
+ Official devices are not to use sources from any of the listed entities. Reasoning for this is explained within the listing.
+* MillenniumOSS (ongoing harassment towards our developers; behaviour which otherwise already makes sources invalid for official builds)
+* MiCode (incomplete kernel sources, GPL violations)
+
+---
+
 ## Communication & code improvements
 
 * Official communication takes place in the Telegram group, to which maintainers are invited upon acceptance.
@@ -199,6 +206,7 @@ A build is considered stable only if:
 ---
 
 ## Version History
+* **1.9** - Add blacklisted entity section
 * **1.8** - Added kernel "root service" prohibition
 * **1.7** - Added GKI Kernel Exception
 * **1.6** – Added Open-Source Tree Requirement: all trees must allow redistribution and modification under proper OSS licenses.

@@ -84,6 +84,16 @@ These rules are set by the CharaROM core team to ensure consistent standards acr
 * CharaROM reserves the right to refuse inclusion of any device or kernel tree that does not comply with proper open-source licensing.
 
 ---
+## AI Assistance
+
+* AI assistance is allowed, especially in accessibility cases.
+* Human maintainers are fully responsible for their AI-assisted commits, and must review and understand them before pushing.
+* AI assistance should be limited to small fixes, not whole projects.
+* Using AI to review logs is encouraged, as it can pin down fixes faster, but it is not required.
+* We permit AI assistance to adapt to the industry's current environment and to make contributing easier for people with physical and/or mental disabilities.
+* AI-generated images and videos are not allowed.
+
+---
 ### Experimental Builds
 
 * All initial builds MUST be labeled as experimental until:
